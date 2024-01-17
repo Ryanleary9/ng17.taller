@@ -1,0 +1,11 @@
+<h3>Counter</h3>
+<p [ngClass]="{negative: number < 0}">{{number}}</p>
+<button (click)=handleCounter(true) [disabled]="number === 10">+1</button>
+<button (click)=handleCounter(false) [disabled]="number === -10">-1</button>
+
+@if (number === 10) {
+<p>You have reached the max number </p>
+}
+@else if (number === -10) {
+<p>You have reached the max number </p>
+}

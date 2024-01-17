@@ -1,0 +1,10 @@
+<p>greeting works!</p>
+<p>Hola , {{user ? user :"Amigo "}}</p>
+
+<label for="">
+  <!-- <input type="text" placeholder="  Dime tu nombre
+" [ngModel]="user" (ngModelChange)="user = $event"> -->
+  <input type="text" placeholder="  Dime tu nombre
+" [(ngModel)]="user">
+  <button (click)="user =''">Borrar</button>
+</label>
